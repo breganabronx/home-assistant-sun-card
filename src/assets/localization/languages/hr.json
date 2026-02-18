@@ -1,0 +1,12 @@
+languages.hr = {
+  Azimuth: "Azimut",
+  Dawn: "Zora",
+  Dusk: "Sumrak",
+  Elevation: "Elevacija",
+  Noon: "Solarno podne",
+  Sunrise: "Izlazak sunca",
+  Sunset: "Zalazak sunca",
+  errors: {
+    SunIntegrationNotFound: "Integracija Sun nije pronađena"
+  }
+};
