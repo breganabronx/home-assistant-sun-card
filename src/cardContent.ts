@@ -31,12 +31,12 @@ export class SunCardContent {
       ${title}
       <div class="sun-card-header">
         <div class="sun-card-text-container">
-          <span class="sun-card-text-subtitle">${localization.Sunrise}</span>
+          <span class="sun-card-text-subtitle">Izlazak sunca</span>
           ${data?.times.sunrise ? this.generateTime(data.times.sunrise) : ''}
 
         </div>
         <div class="sun-card-text-container">
-          <span class="sun-card-text-subtitle">${localization.Sunset}</span>
+          <span class="sun-card-text-subtitle">Zalazak sunca</span>
           ${data?.times.sunset ? this.generateTime(data.times.sunset) : ''}
         </div>
       </div>
@@ -100,15 +100,15 @@ export class SunCardContent {
     const upperRow = html`
       <div class="sun-card-footer-row">
         <div class="sun-card-text-container">
-          <span class="sun-card-text-subtitle">${localization.Dawn}</span>
+          <span class="sun-card-text-subtitle">Zora</span>
           ${data?.times.dawn ? this.generateTime(data.times.dawn) : ''}
         </div>
         <div class="sun-card-text-container">
-          <span class="sun-card-text-subtitle">${localization.Noon}</span>
+          <span class="sun-card-text-subtitle">Solarno podne</span>
           ${data?.times.noon ? this.generateTime(data.times.noon) : ''}
         </div>
         <div class="sun-card-text-container">
-          <span class="sun-card-text-subtitle">${localization.Dusk}</span>
+          <span class="sun-card-text-subtitle">Sumrak</span>
           ${data?.times.dusk ? this.generateTime(data.times.dusk) : ''}
         </div>
       </div>
@@ -118,14 +118,14 @@ export class SunCardContent {
     if (config.showAzimuth || config.showElevation) {
       const azimuth = config.showAzimuth ? html`
         <div class="sun-card-text-container">
-          <span class="sun-card-text-subtitle">${localization.Azimuth}</span>
+          <span class="sun-card-text-subtitle">Azimut</span>
           <span class="sun-card-dawn-time sun-card-text-time">${data?.azimuth ?? ''}</span>
         </div>
       ` : html``
 
       const elevation = config.showElevation ? html`
         <div class="sun-card-text-container">
-          <span class="sun-card-text-subtitle">${localization.Elevation}</span>
+          <span class="sun-card-text-subtitle">Elevacija</span>
           <span class="sun-card-dawn-time sun-card-text-time">${data?.elevation ?? ''}</span>
         </div>
       ` : html``
