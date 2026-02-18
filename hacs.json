@@ -1,5 +1,11 @@
 {
-  "name": "Sun Card",
+  "name": "Home Assistant Sun Card with HR",
+  "content_in_root": false,
+  "filename": "dist/home-assistant-sun-card.js",
   "render_readme": true,
-  "filename": "home-assistant-sun-card.js"
+  "domains": [],
+  "country": ["HR"],
+  "homeassistant": "2024.1.0",
+  "hacs": "1.1.0",
+  "iot_class": "local_push"
 }
